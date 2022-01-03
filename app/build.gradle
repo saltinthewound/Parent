@@ -29,7 +29,25 @@ android {
         viewBinding true
     }
 }
+subprojects {
+    apply plugin: 'maven-publish'
 
+    afterEvaluate {
+        // To avoid publishing of the applications inside the project ..
+        if (!plugins.hasPlugin("android")) {
+            publishing {
+                publications {
+                    mavenAar(MavenPublication) {
+                        afterEvaluate {
+                            artifactId "$project.name"
+                            from components.release
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.4.0'
