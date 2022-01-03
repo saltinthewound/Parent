@@ -46,8 +46,11 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.example.mycoollib'
-                artifactId = 'MyCoollib'
+//                groupId = 'com.example.mycoollib'
+//                artifactId = 'MyCoollib'
+//                version = '1.0'
+                groupId = 'com.example.parent'
+                artifactId = 'app'
                 version = '1.0'
             }
         }
