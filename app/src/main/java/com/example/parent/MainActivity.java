@@ -1,10 +1,12 @@
 package com.example.parent;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.mycoollib.LatLonDistanceCalculator;
 import com.example.mycoollib.Point;
+import com.example.mycoollib.TestActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,8 +39,9 @@ public class MainActivity extends AppCompatActivity {
 //        NavigationUI.setupWithNavController(binding.navView, navController);
 
         setContentView(R.layout.activity_main);
-
-        Point buenosAiresObeliscoPoint =
+       /* Intent intent = new Intent(MainActivity.this, TestActivity.class);
+        startActivity(intent);*/
+        /*Point buenosAiresObeliscoPoint =
                 new Point((float) -34.6037389, (float) -58.3815704);
 
         Point nycStatueOfLibertyPoint =
@@ -51,5 +54,5 @@ public class MainActivity extends AppCompatActivity {
         TextView kilometersLabel = (TextView) findViewById(R.id.kilometers_label);
 
         kilometersLabel.setText("Between the Obelisco and the Statue of Liberty there are: \n" + distanceBetweenPoints + "KM");
-    }
+  */  }
 }
