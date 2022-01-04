@@ -35,8 +35,8 @@ public class TestActivity  extends AppCompatActivity {
                 buenosAiresObeliscoPoint,
                 nycStatueOfLibertyPoint);
 
-        TextView kilometersLabel = (TextView) findViewById(R.id.kilometers_label);
+//        TextView kilometersLabel = (TextView) findViewById(R.id.kilometers_label);
         Log.d("Parent","You are inside parent"+distanceBetweenPoints);
-        kilometersLabel.setText("this is parent hello - Between the Obelisco and the Statue of Liberty there are: \n" + distanceBetweenPoints + "KM");
+//        kilometersLabel.setText("this is parent hello - Between the Obelisco and the Statue of Liberty there are: \n" + distanceBetweenPoints + "KM");
     }
 }
