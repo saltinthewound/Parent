@@ -1,6 +1,7 @@
 package com.example.mycoollib;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -35,7 +36,7 @@ public class TestActivity  extends AppCompatActivity {
                 nycStatueOfLibertyPoint);
 
         TextView kilometersLabel = (TextView) findViewById(R.id.kilometers_label);
-
-        kilometersLabel.setText("Between the Obelisco and the Statue of Liberty there are: \n" + distanceBetweenPoints + "KM");
+        Log.d("Parent","You are inside parent");
+        kilometersLabel.setText("this is parent hello - Between the Obelisco and the Statue of Liberty there are: \n" + distanceBetweenPoints + "KM");
     }
 }
