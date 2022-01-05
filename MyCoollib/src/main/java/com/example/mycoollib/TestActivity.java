@@ -3,6 +3,7 @@ package com.example.mycoollib;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -37,6 +38,7 @@ public class TestActivity  extends AppCompatActivity {
 
 //        TextView kilometersLabel = (TextView) findViewById(R.id.kilometers_label);
         Log.d("Parent","You are inside parent"+distanceBetweenPoints);
+        Toast.makeText(this,"distance::"+distanceBetweenPoints,Toast.LENGTH_LONG).show();
 //        kilometersLabel.setText("this is parent hello - Between the Obelisco and the Statue of Liberty there are: \n" + distanceBetweenPoints + "KM");
     }
 }
